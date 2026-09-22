@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>4.3 Specificity</title>
+    <style>
+      p {
+        color: black;
+      }
+
+      .highlight {
+        color: green;
+      }
+
+      #unique {
+        color: purple;
+      }
+
+      .c1.c2.c3 {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="unique" class="highlight c1 c2 c3">Який колір переможе?</p>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Тарифні плани</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="pricing">
+      <div class="container">
+        <h1 class="pricing__title">Наші тарифи</h1>
+        <p class="pricing__subtitle">Оберіть план, який найкраще підходить для ваших завдань</p>
+
+        <div class="pricing__grid">
+          <article class="pricing-card">
+            <h3 class="pricing-card__label">Basic</h3>
+            <p class="pricing-card__price">$10 <span class="pricing-card__period">/ month</span></p>
+            <ul class="pricing-card__features">
+              <li>1 User</li>
+              <li>5GB Storage</li>
+              <li>Basic Support</li>
+            </ul>
+            <button class="btn btn--outline">Select</button>
+          </article>
+
+          <article class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge">PRO &bull; ACTIVE</span>
+            <h3 class="pricing-card__label">Pro</h3>
+            <p class="pricing-card__price">$29 <span class="pricing-card__period">/ month</span></p>
+            <ul class="pricing-card__features">
+              <li>5 Users</li>
+              <li>50GB Storage</li>
+              <li>Priority Support</li>
+            </ul>
+            <button class="btn btn--primary">Get Started</button>
+          </article>
+
+          <article class="pricing-card">
+            <h3 class="pricing-card__label">Enterprise</h3>
+            <p class="pricing-card__price">$99 <span class="pricing-card__period">/ month</span></p>
+            <ul class="pricing-card__features">
+              <li>Unlimited</li>
+              <li>1TB Storage</li>
+              <li>24/7 Support</li>
+            </ul>
+            <button class="btn btn--outline">Contact</button>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>4.5 CSS Variables</title>
+    <style>
+      :root {
+        --bg-color: white;
+        --text-color: black;
+      }
+
+      .card {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        border: 1px solid #ccc;
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .dark-card {
+        --bg-color: #1e1e1e;
+        --text-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">Звичайна картка (глобальні змінні з :root)</div>
+
+    <div class="card dark-card">Темна картка (локально перевизначені змінні)</div>
+  </body>
+</html>
