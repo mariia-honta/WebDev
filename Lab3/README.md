@@ -7,17 +7,19 @@
 
 1- структура
 
-<!--
+```html
 <div class="header">...</div>
 <div class="main">...</div>
-<div class="footer">...</div>-->
+<div class="footer">...</div>
+```
 
 2- структура
 
-<!--
+```html
 <header>...</header>
 <main>...</main>
-<footer>...</footer>-->
+<footer>...</footer>
+```
 
 За допомогою DevTool можна була визначити, що друга структура явно передає, де шапка, основний вміст і підвал (ролі banner, main, contentinfo), а в першій усе просто generic. І як раз другий варіант дає змогу скрінрідерам,пошувикам розуміти суть.
 
@@ -35,24 +37,33 @@ H2 - другий розділ
 Тут нам порібно порівняти два варіанти:
 Варніант 1
 
-<!--<title>Pricing</title>
-<meta name="description" content="Pricing page"> -->
+```html
+<title>Pricing</title> <meta name="description" content="Pricing page" />
+```
 
 Варіант 2
 
-<!--<title>SaaS Pricing Plans - Basic, Pro and Enterprise</title>
-<meta name="description" content="Compare Basic, Pro and Enterprise SaaS pricing plans and choose a plan for your team."> -->
+```html
+<title>SaaS Pricing Plans - Basic, Pro and Enterprise</title>
+<meta
+  name="description"
+  content="Compare Basic, Pro and Enterprise SaaS pricing plans and choose a plan for your team."
+/>
+```
 
 Другий варіант кращий, бо він конкретний. У першому варіанті "Pricing" і "Pricing page" просто кажуть, що це сторінка з цінами, і все. Незрозуміло, чиї це ціни і що це за сервіс. У другому одразу видно, що це SaaS-тарифи, і названі всі плани: Basic, Pro та Enterprise. В описі ще сказано, що можна зробити: порівняти плани й обрати той, що підходить команді. Тому користувач у пошуку відразу розуміє, чи це те, що він шукає. Пошуковик теж краще розуміє, про що сторінка. І другий варіант чесно описує те, що реально є на сторінці.
 
 **4.4. SEO-контент: текст, посилання та зображення**
 Тут також маємо порівняти і яка інформація є зрозумілішою.
 
-<!--<a href="/plans">Click here</a>
-<a href="/plans">Compare our pricing plans</a> -->
+```html
+<a href="/plans">Click here</a> <a href="/plans">Compare our pricing plans</a>
+```
 
-<!--<img src="pricing.jpg" alt="pricing plans">
-<img src="pricing.jpg" alt="Three SaaS pricing plans: Basic, Pro and Enterprise"> -->
+```html
+<img src="pricing.jpg" alt="pricing plans" />
+<img src="pricing.jpg" alt="Three SaaS pricing plans: Basic, Pro and Enterprise" />
+```
 
 Compare our pricing plans і другий alt зрозуміліші, бо конкретно кажуть, що там є. "Click here" нічого не пояснює. Якщо скрінрідер покаже всі посилання списком, там буде купа однакових "Click here", і незрозуміло, куди вони ведуть. А "Compare our pricing plans" одразу каже, що там порівняння тарифів. Пошуковик теж бере тему сторінки з тексту посилання. З alt так само: "pricing plans" це дуже загально, а другий варіант каже, скільки планів і які саме. Тому людина, яка не бачить картинку, розуміє, що на ній, а пошуковик краще розуміє зображення.
 
